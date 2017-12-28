@@ -7,6 +7,7 @@ main (int argc, char *argv[])
 		int i;
 		int err;
 		short buf[128];
+		for (i = 0; i < 128; i++) buf[i] = 0;
 		uint Rate = 44100;
 		snd_pcm_t *capture_handle;
 		snd_pcm_hw_params_t *hw_params;
